@@ -1,0 +1,84 @@
+<!DOCTYPE html><html>
+<head>
+<meta charset="UTF-8">
+<title>Good Night</title><style>
+body{
+    margin:0;
+    overflow:hidden;
+    background:linear-gradient(to bottom,#0b1026,#1a234d);
+    height:100vh;
+    font-family:Arial,sans-serif;
+}
+
+h1{
+    color:white;
+    text-align:center;
+    margin-top:50px;
+    font-size:50px;
+    animation: glow 2s infinite alternate;
+}
+
+p{
+    color:white;
+    text-align:center;
+    font-size:22px;
+}
+
+@keyframes glow{
+    from{ text-shadow:0 0 10px white; }
+    to{ text-shadow:0 0 30px cyan; }
+}
+
+.star{
+    position:absolute;
+    color:white;
+    animation: twinkle 2s infinite;
+}
+
+@keyframes twinkle{
+    50%{opacity:0.2;}
+}
+
+.bear{
+    position:absolute;
+    font-size:80px;
+    bottom:50px;
+}
+
+.whiteBear{
+    animation: moveRight 12s infinite alternate linear;
+}
+
+.brownBear{
+    animation: moveLeft 15s infinite alternate linear;
+}
+
+@keyframes moveRight{
+    from{left:50px;}
+    to{left:80%;}
+}
+
+@keyframes moveLeft{
+    from{right:50px;}
+    to{right:80%;}
+}
+
+.moon{
+    position:absolute;
+    top:40px;
+    right:80px;
+    font-size:90px;
+    animation: floatMoon 5s infinite ease-in-out;
+}
+
+@keyframes floatMoon{
+    50%{transform:translateY(-20px);}
+}
+</style></head><body><div class="moon">🌙</div><h1>Good Night 🌙</h1>
+<p>Sleep well and sweet dreams ✨</p><div class="bear whiteBear">🐻‍❄️</div>
+<div class="bear brownBear">🐻</div><div class="star" style="left:10%;top:10%;">⭐</div>
+<div class="star" style="left:20%;top:20%;">✨</div>
+<div class="star" style="left:40%;top:15%;">⭐</div>
+<div class="star" style="left:60%;top:25%;">✨</div>
+<div class="star" style="left:80%;top:10%;">⭐</div></body>
+  </html>
